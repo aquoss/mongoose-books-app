@@ -5,3 +5,6 @@ mongoose.Promise = global.Promise;
 
 // connect to the localhost book-app database
 mongoose.connect("mongodb://localhost/book-app");
+
+//import and export book model
+module.exports.Book = require('./book.js');
